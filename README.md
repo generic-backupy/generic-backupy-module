@@ -12,3 +12,19 @@ source venv/bin/activate
 pip3 install -r requirements.txt
 deactivate
 ```
+
+Write your code in the module.py file, and change your meta information
+in gb.json file.
+
+## Current Problems (Future Todos)
+
+### zip file name
+Please don't uses spaces and other "unfriendly" filenames for the zip file.
+It leads to problems in the installation process in the 
+generic backup application
+
+### installation on distributed instances
+Currently, there is no support on installation on distributed instances.
+Currently, it will only be installed on the first system, which gets
+the installation worker job. 
+We need to implement a sync functionality later.
