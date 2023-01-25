@@ -1,0 +1,11 @@
+version: "3.9"
+
+services:
+  module:
+    build:
+      context: .
+      dockerfile: docker/python/Dockerfile
+    image: generic-backupy/module
+    container_name: generic-backupy-module
+    volumes:
+      - ./module:/code
