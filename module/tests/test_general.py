@@ -24,5 +24,5 @@ class GeneralTest(TestCase):
 
     def test_save_to_storage(self):
         print(f"our path: {os.getcwd()}\n{os.listdir()}")
-        response = self.module.save_to_storage(self.backup_raw)
+        response = self.module.do_backup()
         self.assertIsNotNone(response)
